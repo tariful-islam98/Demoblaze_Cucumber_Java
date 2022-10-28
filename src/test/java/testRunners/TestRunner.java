@@ -10,8 +10,9 @@ import org.testng.annotations.Test;
         monochrome = true,
         tags = "@Demo",
         plugin = {"pretty",
-                "html:results/cucumber.html",
-                "json:results/cucumber.json"}
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "html:allure-results/cucumber.html",
+                "json:allure-results/cucumber.json"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
     @Override
